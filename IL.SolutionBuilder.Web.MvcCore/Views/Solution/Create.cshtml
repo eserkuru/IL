@@ -1,0 +1,49 @@
+﻿@model IL.SolutionBuilder.Web.MvcCore.Models.Solution.AddViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/Welcome/_Layout.cshtml";
+}
+<form asp-action="Create" asp-controller="Solution" method="post" id="solutionCreateForm">
+    <div class="container-fluid bg-dark mb-3 p-2">
+        <div class="row flex-row text-right">
+            <div class="col-xl-4 col-sm-4">
+                <ol class="breadcrumb bg-dark m-0 p-2">
+                    <li class="breadcrumb-item">
+                        <a asp-action="Index" asp-controller="Solution" class="text-info">Solutions</a>
+                    </li>
+                    <li class="breadcrumb-item active">Create</li>
+                </ol>
+            </div>
+            <div class="col-xl-8 col-sm-8">
+                <input type="submit" name="save" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-login text-white bg-dark mx-auto mb-3">
+        <div class="card-header">Create solution</div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="companyName">Solution Name</label>
+                <input asp-for="Solution.CompanyName" type="text" id="companyName" class="form-control" placeholder="Solution Name" required="required" autofocus="autofocus">
+            </div>
+            <div class="form-group">
+                <label for="projectName">Project Name</label>
+                <input asp-for="Solution.ProjectName" type="text" id="projectName" class="form-control" placeholder="Project Name" required="required">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input asp-for="Solution.Description" type="text" id="description" class="form-control" placeholder="Description" required="required">
+            </div>
+            <div class="form-group">
+                <label for="longDescription">Long Description</label>
+                <textarea asp-for="Solution.LongDescription" type="text" id="longDescription" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Do you want to add default projects?</label>
+                <input asp-for="DefaultProject" type="checkbox" class="form-check" />
+            </div>
+        </div>
+    </div>
+</form>
+

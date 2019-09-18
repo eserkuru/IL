@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IL.SolutionBuilder.DataAccess\IL.SolutionBuilder.DataAccess.csproj" />
+    <ProjectReference Include="..\IL.SolutionBuilder.Entities\IL.SolutionBuilder.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

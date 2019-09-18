@@ -1,0 +1,12 @@
+D:\GitHub\IL\IL.SolutionBuilder.Entities\bin\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.deps.json
+D:\GitHub\IL\IL.SolutionBuilder.Entities\bin\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.dll
+D:\GitHub\IL\IL.SolutionBuilder.Entities\bin\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.pdb
+D:\GitHub\IL\IL.SolutionBuilder.Entities\bin\Debug\netcoreapp2.2\IL.Core.dll
+D:\GitHub\IL\IL.SolutionBuilder.Entities\bin\Debug\netcoreapp2.2\IL.Core.pdb
+D:\GitHub\IL\IL.SolutionBuilder.Entities\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.csprojAssemblyReference.cache
+D:\GitHub\IL\IL.SolutionBuilder.Entities\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.csproj.CoreCompileInputs.cache
+D:\GitHub\IL\IL.SolutionBuilder.Entities\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.AssemblyInfoInputs.cache
+D:\GitHub\IL\IL.SolutionBuilder.Entities\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.AssemblyInfo.cs
+D:\GitHub\IL\IL.SolutionBuilder.Entities\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.csproj.CopyComplete
+D:\GitHub\IL\IL.SolutionBuilder.Entities\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.dll
+D:\GitHub\IL\IL.SolutionBuilder.Entities\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.pdb

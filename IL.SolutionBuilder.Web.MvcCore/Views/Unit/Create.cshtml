@@ -1,0 +1,78 @@
+﻿@using IL.SolutionBuilder.Entities.Concrete
+@model IL.SolutionBuilder.Web.MvcCore.Models.Unit.AddViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/SBAdmin/_Layout.cshtml";
+}
+
+<div id="content-wrapper" class="p-0">
+    <form asp-action="Create" asp-controller="Unit" asp method="post" id="unitCreateForm">
+        <!-- Begin Breadcrumb Header -->
+        <div class="container-fluid bg-dark mb-3 p-2">
+            <div class="row flex-row text-right">
+                <div class="col-xl-6 col-sm-6">
+                    <ol class="breadcrumb bg-dark m-0 p-2">
+                        <li class="breadcrumb-item">
+                            <a asp-action="Index"
+                               asp-controller="Solution"
+                               class="text-info">
+                                Solutions
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a asp-action="Edit"
+                               asp-controller="Solution"
+                               class="text-info">
+                                Units
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active">Create</li>
+                    </ol>
+                </div>
+                <div class="col-xl-6 col-sm-6">
+                    <span class="d-flex justify-content-end m-1">
+                        <input type="submit" name="save" value="Save" class="btn btn-primary" />
+                        <input asp-for="@Model.Unit.Solution.Id" type="hidden" value="@Model.Solution.Id"/>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- End Breadcrumb Header -->
+        <!-- Tabs -->
+        <div class="container-fluid">
+            <nav class="m-1">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-unit-tab" data-toggle="tab" href="#nav-unit" role="tab" aria-controls="nav-unit" aria-selected="true">New Unit</a>
+                </div>
+            </nav>
+            <!-- End Tabs -->
+            <!-- Tab Content -->
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-unit" role="tabpanel" aria-labelledby="nav-unit-tab">
+                    <div class="col-xl-12 col-sm-12">
+                        <div class="card border-0">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-xl-6 col-sm-6">
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                            <label for="name">Name</label>
+                                            <input asp-for="@Model.Unit.Name" type="text" id="name" class="form-control" placeholder="Name" required="required"
+                                                   autofocus="autofocus" />
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="description">Description</label>
+                                            <textarea asp-for="@Model.Unit.Description" class="form-control" id="description" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tab Content -->
+        </div>
+    </form>
+</div>
+
+

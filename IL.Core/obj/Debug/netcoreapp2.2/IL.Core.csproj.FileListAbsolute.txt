@@ -1,0 +1,9 @@
+D:\GitHub\IL\IL.Core\bin\Debug\netcoreapp2.2\IL.Core.deps.json
+D:\GitHub\IL\IL.Core\bin\Debug\netcoreapp2.2\IL.Core.dll
+D:\GitHub\IL\IL.Core\bin\Debug\netcoreapp2.2\IL.Core.pdb
+D:\GitHub\IL\IL.Core\obj\Debug\netcoreapp2.2\IL.Core.csproj.CoreCompileInputs.cache
+D:\GitHub\IL\IL.Core\obj\Debug\netcoreapp2.2\IL.Core.AssemblyInfoInputs.cache
+D:\GitHub\IL\IL.Core\obj\Debug\netcoreapp2.2\IL.Core.AssemblyInfo.cs
+D:\GitHub\IL\IL.Core\obj\Debug\netcoreapp2.2\IL.Core.dll
+D:\GitHub\IL\IL.Core\obj\Debug\netcoreapp2.2\IL.Core.pdb
+D:\GitHub\IL\IL.Core\obj\Debug\netcoreapp2.2\IL.Core.csprojAssemblyReference.cache

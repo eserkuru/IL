@@ -1,0 +1,33 @@
+﻿@model IL.SolutionBuilder.Web.MvcCore.Models.SidebarViewModel
+<!-- Sidebar -->
+<ul class="sidebar navbar-nav">
+    <li class="nav-item">
+        <a href="javascript:history.go(-1)" class="nav-link">
+            <i class="fas fa-fw fa-angle-left"></i>
+            Go back
+        </a>
+    </li>
+    @foreach (var unit in Model.Units)
+    {
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+               href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>@unit.Name</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="@("dropdown" + unit.Name)">
+                <h6 class="dropdown-header">Projects:</h6>
+                @foreach (var project in Model.Projects.Where(p => p.Unit.Id == unit.Id))
+                {
+                        <a class="dropdown-item d-flex justify-content-between" href="#">
+                            @project.Name
+                            @if (!project.IsFileCreated)
+                            {
+                                <i class="fa fa-file-import text-danger p-1"></i>
+                            }
+                        </a>
+                }
+            </div>
+        </li>
+    }
+</ul>
+<!-- End Sidebar -->

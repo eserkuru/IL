@@ -1,0 +1,68 @@
+﻿@model IL.SolutionBuilder.Web.MvcCore.Models.Solution.DetailViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/SBAdmin/_Layout.cshtml";
+}
+<div id="content-wrapper" class="pt-0">
+    <!-- Breadcrumb and Actions -->
+    <div class="container-fluid bg-dark mb-3 p-2">
+        <div class="d-flex justify-content-between">
+            <div class="col-xl-6 col-sm-6">
+                <ol class="breadcrumb bg-dark m-0 p-2">
+                    <li class="breadcrumb-item">
+                        <a href="#"
+                           class="text-info">
+                            Unit
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active">Details</li>
+                </ol>
+            </div>
+            <div class="card-header bg-dark">
+                <span class="text-secondary">
+                    @(Model.Solution.CompanyName + "." + Model.Solution.ProjectName)
+                </span>
+                <span>
+                    <a asp-action="Edit"
+                       asp-controller="Solution"
+                       asp-route-id="@Model.Solution.Id"
+                       class="text-secondary mr-2 ml-2"
+                       data-toggle="tooltip"
+                       data-placement="bottom"
+                       title="Solution settings">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                    @if (Model.Solution.IsFileCreated)
+                    {
+                        <a class="text-success ml-2"
+                           data-toggle="tooltip"
+                           data-placement="bottom"
+                           title="Solution file created">
+                            <i class="fa fa-check"></i>
+                        </a>
+                    }
+                    else
+                    {
+                        <a asp-action="CreateFile"
+                           asp-controller="Solution"
+                           asp-route-id="@Model.Solution.Id"
+                           class="text-danger ml-2"
+                           data-toggle="tooltip"
+                           data-placement="bottom"
+                           title="Create solution's file">
+                            <i class="fa fa-file-import"></i>
+                        </a>
+                    }
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb and Actions -->
+    <!-- Content Body -->
+    <div class="container-fluid">
+        <div class="row flex-row">
+
+        </div>
+    </div>
+</div>
+

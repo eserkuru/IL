@@ -1,0 +1,14 @@
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\bin\Debug\netcoreapp2.2\IL.SolutionBuilder.DataAccess.deps.json
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\bin\Debug\netcoreapp2.2\IL.SolutionBuilder.DataAccess.dll
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\bin\Debug\netcoreapp2.2\IL.SolutionBuilder.DataAccess.pdb
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\bin\Debug\netcoreapp2.2\IL.Core.dll
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\bin\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.dll
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\bin\Debug\netcoreapp2.2\IL.Core.pdb
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\bin\Debug\netcoreapp2.2\IL.SolutionBuilder.Entities.pdb
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.DataAccess.csprojAssemblyReference.cache
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.DataAccess.csproj.CoreCompileInputs.cache
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.DataAccess.AssemblyInfoInputs.cache
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.DataAccess.AssemblyInfo.cs
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.DataAccess.csproj.CopyComplete
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.DataAccess.dll
+D:\GitHub\IL\IL.SolutionBuilder.DataAccess\obj\Debug\netcoreapp2.2\IL.SolutionBuilder.DataAccess.pdb

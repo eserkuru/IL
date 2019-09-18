@@ -1,0 +1,44 @@
+﻿@using Microsoft.CodeAnalysis
+@model IL.SolutionBuilder.Web.MvcCore.Models.Solution.ListViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Welcome/_Layout.cshtml";
+}
+<div class="container-fluid bg-dark mb-3 p-2">
+    <div class="row flex-row text-right">
+        <div class="col-xl-4 col-sm-4">
+            <ol class="breadcrumb bg-dark text-white m-0 p-2">
+                <li class="breadcrumb-item">
+                    <a asp-action="Index" asp-controller="Solution" class="text-info">Solutions</a>
+                </li>
+                <li class="breadcrumb-item active">Details</li>
+            </ol>
+        </div>
+        <div class="col-xl-8 col-sm-8">
+            <a asp-action="Create" asp-controller="Solution" class="btn btn-info" role="button" aria-pressed="true">Create</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row flex-row">
+        @foreach (var solution in Model.Solutions)
+        {
+            <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="card text-white bg-info o-hidden h-100">
+                    <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fas fa-fw fa-code"></i>
+                        </div>
+                        <div class="mr-5">@(solution.CompanyName + "." + solution.ProjectName)</div>
+                    </div>
+                    <a href="@Url.Action("Details","Solution", new { solutionId = solution.Id})" class="card-footer text-white clearfix small z-1">
+                        <span class="float-left">View Details</span>
+                        <span class="float-right">
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
